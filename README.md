@@ -20,5 +20,7 @@ The page must stay in sync with what the backend actually does. The behaviour li
 
 ## Style rules
 
+- Typeface is Montserrat, loaded from Google Fonts in each page head with a system font fallback. Do not introduce a second face.
+- `logo.jpg` is the shOk mark shown at the top of every page. Keep it, and keep the `alt` text.
 - No em dashes or en dashes anywhere in the copy. Hyphens only inside numeric ranges or identifier formats.
 - Keep the plain light styling. These pages are read, not browsed, and should load fast on a phone.
