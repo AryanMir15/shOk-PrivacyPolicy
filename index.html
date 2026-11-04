@@ -25,6 +25,19 @@
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
+    nav {
+      margin-bottom: 24px;
+      font-size: 14px;
+    }
+    nav a {
+      color: #0C831F;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 18px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     h1 {
       font-size: 32px;
       margin-bottom: 10px;
@@ -53,13 +66,23 @@
       margin-bottom: 15px;
       font-size: 15px;
     }
-    .disclaimer {
-      margin-top: 40px;
-      padding: 20px;
-      background: #fff3cd;
-      border-left: 4px solid #ffc107;
-      border-radius: 4px;
-      font-size: 14px;
+    ul {
+      margin: 0 0 15px 22px;
+      font-size: 15px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .notice {
+      margin-top: 18px;
+      padding: 18px 20px;
+      background: #f7f4ef;
+      border: 1px solid #e3ddd2;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+    .notice strong {
+      color: #101014;
     }
     .contact {
       margin-top: 30px;
@@ -67,6 +90,13 @@
       background: #e7f3ff;
       border-left: 4px solid #007bff;
       border-radius: 4px;
+    }
+    .contact a {
+      color: #0C831F;
+      font-weight: 600;
+    }
+    a {
+      color: #0C831F;
     }
     @media (max-width: 600px) {
       body {
@@ -83,91 +113,128 @@
 </head>
 <body>
   <div class="container">
+    <nav>
+      <a href="./index.html">Privacy Policy</a>
+      <a href="./terms.html">Terms of Service</a>
+      <a href="./delete-account.html">Delete Account</a>
+    </nav>
+
     <h1>Privacy Policy</h1>
-    <p class="last-updated">Last updated: October 31, 2026</p>
+    <p class="last-updated">Last updated: 4 November 2026</p>
 
     <p class="intro">
-      This Privacy Policy explains what information shOk collects, why we collect it, who we share it with, and the choices and rights you have. By using the Service you agree to the practices described here.
+      This Privacy Policy explains what information shOk collects, why we collect it, who we share it with, how long we keep it, and the choices and rights you have. It applies to the shOk app and every role inside it: customer, rider and vendor. By using the Service you agree to the practices described here.
     </p>
 
     <h2>1. Information We Collect</h2>
     <p>
-      <strong>Account data:</strong> name, email, phone number, and optional profile photo.<br>
-      <strong>Order data:</strong> delivery addresses, order contents, chat messages with riders and support, order history and ratings.<br>
-      <strong>Location data:</strong> your device location when you grant permission (used for delivery addresses and nearby vendors), and rider location while a delivery is active (used for live tracking).<br>
-      <strong>Device and usage data:</strong> push-notification tokens, device model and OS, and how you interact with the app.<br>
-      We do not collect contact lists, call logs or other unrelated personal data.
+      <strong>Account data:</strong> name, email address, phone number, password (stored only as a salted hash), optional profile photo, and the sign-in method you use, including a Google account identifier if you sign in with Google.<br>
+      <strong>Order data:</strong> delivery addresses and their map coordinates, the contact name and phone number you attach to an address, order contents, order value, payment method and payment status, order history and ratings.<br>
+      <strong>Chat and support data:</strong> messages you exchange with riders, vendors and support inside the app, plus files you attach to them.<br>
+      <strong>Location data:</strong> your device location when you grant permission, used to set delivery addresses and find nearby shops. For riders, location while a delivery is active and while you are on duty, used for live tracking and dispatch.<br>
+      <strong>Rider verification data:</strong> for rider accounts, the identity documents you submit for review (legal name, national identity card number, licence number, vehicle number, and photos of the documents and yourself). This data is not collected from customers or vendors.<br>
+      <strong>Device and usage data:</strong> push notification tokens, device model, operating system, app version, and how you interact with the app.<br>
+      <strong>Content you create:</strong> reviews, ratings, reported conversations and support tickets.
+    </p>
+    <p>
+      We do not collect your contact list, call logs, SMS messages, calendar, or other data unrelated to operating the Service.
     </p>
 
     <h2>2. How We Use It</h2>
     <p>
-      We use your information to: take and deliver orders; match riders to requests; show order status and live tracking; process payments; send notifications you have enabled; provide customer support; prevent fraud and abuse; keep the Service secure; and improve the app. We do not sell your personal information.
+      We use your information to: create and secure your account; take, route and deliver orders; match riders to requests; show order status and live tracking; process payments and rider remittances; send the notifications you have enabled; provide customer support; review rider applications; prevent fraud, abuse and promotion misuse; keep the Service secure; diagnose crashes and fix bugs; and understand which features are used so we can improve them.
+    </p>
+    <p>
+      We do not sell your personal information, and we do not share it with advertisers.
     </p>
 
     <h2>3. Sharing</h2>
     <p>
-      We share only what is needed to operate the Service: your name, address and order details go to the vendor and rider handling your order; your chat messages go to the other party in that conversation; a rider on an active delivery shares their live location with the customer. Service providers that process data on our behalf include cloud image hosting (Cloudinary) and map/location providers. We may disclose information if required by law, to protect rights and safety, or in connection with a business transfer. We do not share data with advertisers.
+      We share only what is needed to run the Service:
     </p>
+    <ul>
+      <li><strong>With vendors and riders:</strong> your name, delivery address, contact number, order details and the instructions you add, so the order can be prepared and delivered. Riders see the customer address for the delivery they accepted.</li>
+      <li><strong>With the other party in a chat:</strong> the messages and attachments you send in that conversation.</li>
+      <li><strong>With customers, for riders:</strong> a rider's approximate live location while a delivery is in progress.</li>
+      <li><strong>With service providers that process data on our behalf:</strong> cloud image hosting (Cloudinary) for uploaded images, Google Maps for addresses, distance and routes, Google Firebase for sign-in verification and push notification delivery, and our database and hosting providers.</li>
+      <li><strong>When required by law:</strong> to comply with a legal obligation, enforce our Terms, or protect the rights, safety and property of shOk, our users or the public.</li>
+      <li><strong>In a business transfer:</strong> if the Service or its assets are transferred, user data may transfer as part of that transaction under this Policy.</li>
+    </ul>
 
     <h2>4. Location</h2>
     <p>
-      <strong>Customers:</strong> location is used to set delivery addresses and estimate delivery times; you can deny the permission and enter addresses manually, though some features may not work.<br>
-      <strong>Riders:</strong> location is shared with the customer and the platform while a delivery is in progress so orders can be tracked; it is not continuously collected when you are off duty.
+      <strong>Customers:</strong> location is used to set delivery addresses, estimate distances and delivery times, and show nearby shops. You can deny the permission and enter addresses manually, although delivery estimates and nearby results will be less accurate.<br>
+      <strong>Riders:</strong> location is collected while you are on duty and during a delivery so customers can track the order and dispatch can offer work. It is not continuously collected while you are off duty.
     </p>
 
     <h2>5. Notifications</h2>
     <p>
-      We send order updates and, if enabled, promotions and offers. You can turn each category off in Settings > Notifications or at the system level; transactional updates required to deliver your order may still be sent while notifications are enabled for the app.
+      We send order status updates and, if enabled, promotions and offers. You can switch each category off in Settings, or block notifications at the system level. Notification delivery requires a push token issued by Google Firebase, which is stored against your account until you sign out, delete the account, or the token is replaced by your device.
     </p>
 
     <h2>6. Automated Decisions</h2>
     <p>
-      Some features use automated processing. For example matching a rider to your order, estimating delivery times, and flagging potentially fraudulent activity. These decisions affect service efficiency, and flags are reviewed before account action is taken. You may contest automated decisions through support.
+      Some features use automated processing: matching a rider to an order, estimating delivery times, and flagging possibly fraudulent activity. These decisions affect how quickly a service is provided. Where a flag could lead to account action, it is reviewed by a person before that action is taken, and you may contest it by contacting support.
     </p>
 
-    <h2>7. Retention and Deletion</h2>
+    <h2>7. Retention and Account Deletion</h2>
     <p>
-      We keep your information while your account is active and for a reasonable period after, as needed for order records, dispute resolution, fraud prevention and legal obligations. Chat and order records may be retained in anonymized or aggregated form. You can request account deletion through Contact Us. We will delete or anonymize personal data that is no longer legally required.
+      <strong>You can delete your account yourself, inside the app.</strong> Open Settings and use the Delete Account option. You can also request deletion from the page at
+      <a href="./delete-account.html">Delete Account</a> or by emailing us. Deletion is immediate, not scheduled for later.
     </p>
+    <p>
+      When you delete your account we remove or clear:
+    </p>
+    <ul>
+      <li>your name, email address, phone number, password and Google account identifier</li>
+      <li>your profile photo and any pending profile photo</li>
+      <li>every saved delivery address, including its map coordinates</li>
+      <li>your push notification tokens, so no further notifications reach your device</li>
+      <li>your favourites, and your rider verification documents if you applied to ride</li>
+      <li>the name, phone number, address text and coordinates attached to your past orders</li>
+    </ul>
+    <p>
+      We keep a limited record of completed transactions after deletion: order numbers, items, amounts, dates, ratings you left, and rider remittance records. We keep these because we need them for accounting, tax, refund disputes, rider payouts and fraud prevention, and because the vendor and rider on the other side of the order also hold that history. These records no longer identify you: the account they point to contains no name, contact details or address. We do not keep your data in a form that can be linked back to you for marketing, and we never re-use it to contact you.
+    </p>
+    <div class="notice">
+      <strong>Before you can delete:</strong> an order that is still in progress, a shop registered to your account, or an unpaid cash remittance on a rider account must be settled first. This protects the person waiting for the delivery, the customers of that shop, and money that is owed. The app tells you exactly what is blocking deletion, and support can help resolve it.
+    </div>
 
     <h2>8. Your Rights</h2>
     <p>
-      You can view and correct your profile and addresses in the app at any time. Depending on applicable law, you may also have the right to access your data, request a copy, object to certain processing, restrict use, or request deletion. Contact us through the app to exercise any of these rights. We respond within a reasonable timeframe.
+      You can view and correct your name, phone number, email, photo and saved addresses in the app at any time, and you can change your password from Settings. Depending on where you live, you may also have the right to request a copy of your data, object to or restrict certain processing, or ask us to correct or delete specific information. Use the Contact section below and we will respond within a reasonable period, normally within 30 days.
     </p>
 
     <h2>9. International Transfers</h2>
     <p>
-      Some service providers may process or store data on servers outside your country. Where that happens, we rely on the providers' own safeguards, and your data remains subject to this Policy.
+      Some service providers may store or process data on servers outside Pakistan. Where that happens, we rely on those providers' own safeguards and contractual commitments, and your data remains protected by this Policy.
     </p>
 
     <h2>10. Security</h2>
     <p>
-      We use encrypted transport, access controls and limited retention to protect your information. No method of transmission or storage is 100% secure. Notify us immediately if you suspect unauthorized use of your account. If a data breach occurs that affects your personal information, we will notify you and relevant authorities as required by law.
+      Traffic between the app and our servers is encrypted in transit. Passwords are stored as salted hashes and are never readable by us. Access to production data is limited to the accounts that need it to operate the Service. No method of transmission or storage is completely secure, so please use a unique password and tell us immediately if you suspect someone else has access to your account. If a data breach affects your personal information, we will notify you and the relevant authorities as required by law.
     </p>
 
     <h2>11. Children</h2>
     <p>
-      The Service is not directed at children under 18, and we do not knowingly collect their information. If you believe a child has created an account, contact us and we will remove it.
+      The Service is not intended for children under 18 and we do not knowingly collect their information. If you believe a child has created an account, contact us and we will remove it.
     </p>
 
-    <h2>12. Third-Party Links and SDKs</h2>
+    <h2>12. Third-Party Links and Services</h2>
     <p>
-      The app may contain links or embedded services operated by third parties (for example map providers or a store listing). Their privacy practices are governed by their own policies, which we encourage you to read.
+      The app may contain links to, or rely on, services operated by third parties, such as map providers or app stores. Their privacy practices are governed by their own policies, which we encourage you to read.
     </p>
 
-    <h2>13. Changes and Contact</h2>
+    <h2>13. Changes to This Policy</h2>
     <p>
-      We may update this Policy and will post changes in the app with a new date; continued use after changes means acceptance. For privacy questions or requests, use the Contact Us section in the app.
+      We may update this Policy as the Service changes. When we do, we post the new version here with a new date, and where the change is significant we tell you in the app. Continuing to use the Service after an update means you accept the revised Policy.
     </p>
-
-    <div class="disclaimer">
-      <strong>Disclaimer:</strong> This privacy policy was drafted by the development team, not legal counsel. It should be reviewed by a qualified attorney before public launch to ensure compliance with applicable laws in your jurisdiction.
-    </div>
 
     <div class="contact">
       <strong>Contact Us:</strong><br>
-      For privacy questions or requests, please use the Contact Us section in the shOk app, or email us at:<br>
-      <a href="mailto:support@shok.app">support@shok.app</a>
+      For privacy questions, data requests, or account deletion help, email us at:<br>
+      <a href="mailto:shok.app.official@gmail.com">shok.app.official@gmail.com</a><br>
+      You can also use the Contact Us section inside the shOk app.
     </div>
   </div>
 </body>
